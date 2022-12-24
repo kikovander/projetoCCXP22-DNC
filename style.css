@@ -1,0 +1,276 @@
+/* Configuração Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  /* Header */
+
+  header {
+    width: 100%;
+    height: 12vh;
+    background-color: #FFD900;    
+
+  }
+
+  header img {
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
+
+  /* Main */
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #conteudoPrincipal {
+    width: 45%;
+    background-color: #514988;
+    text-align: center;
+
+  }
+
+  #conteudoPrincipal h1 {
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F3C61F;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+  }
+
+  #conteudoPrincipal #data {
+    font-size: 1.1vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;    
+  }
+
+  #conteudoPrincipal #descricao {
+    font-size: 1.5vw;
+    color: white;
+    margin: 70px 60px 90px 60px;
+  }
+
+  #conteudoTimerVideo {
+    width: 65%;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw; 
+  }
+
+   .timer :only-child {
+    padding-right: 4vw;
+  }
+
+  .timer h2 {  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vw;
+  color: #514988;
+  }
+
+  #textoTimer {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8vw;
+  color: #E33881;
+  margin-bottom: 2vh;
+  margin-left: 3vw; 
+  }
+
+  #video {
+    margin: 0px 30px 15px 15px;
+  }
+
+  #video p video {
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  #inscricoes {
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+    color: #F3C61F;
+    margin: 20px 0px 0px 40px;
+
+  }
+
+  #inscricoes img {
+    margin-top: 2.2vh;
+  }
+
+  .botaoInscricao {
+    width: 30vw;
+    height: 16vh;
+    border-radius: 20px;
+    background-color: #514988;
+    border: 0px;
+    color: white;
+    font-size: 2vw;
+    font-weight: 700;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 12vh;
+  }
+
+  .botaoInscricao:hover {
+    background-color: yellow;
+  }
+
+
+/* Resposividade */
+
+  /* @media only screen and (max-width:1150px) {
+
+    header {
+      width: 100%;
+      height: 80px;
+    }
+  
+    header img {
+      width: 130px;
+    }
+
+    #conteudoPrincipal h1 {
+      font-size: 35px;
+    }
+
+    #conteudoPrincipal #data {
+      font-size: 18px;
+    }
+
+    #conteudoPrincipal #descricao {
+      font-size: 20px;
+      margin: 30px 60px 40px 60px;
+    }
+
+    .timer h2{
+      font-size: 40px;
+    }
+
+    #textoTimer {  
+      font-size: 20px;
+      line-height: 36px;
+      margin-bottom: 15px;    
+      }
+
+      #incricoes {
+        font-size: 22px;
+        margin: 20px 0px 0px 40px;    
+      }
+
+      #incricoes img {
+        width: 180px;
+      }
+
+    .botaoInscricao {
+      width: 250px;
+      height: 55px;
+      font-size: 20px;
+      margin-top: 130px;
+      margin-right: 15px;
+    }
+
+  }
+
+  @media only screen and (max-width:1050px) {
+
+    #conteudoPrincipal h1 {
+      font-size: 28px;
+    }
+
+    #conteudoPrincipal #data {
+      font-size: 15px;
+    }
+
+    #conteudoPrincipal #descricao {
+      font-size: 18px;
+      margin: 30px 60px 40px 60px;
+    }
+
+    .timer h2{
+      font-size: 35px;
+    }
+
+    #textoTimer {  
+      font-size: 20px;
+      line-height: 36px;
+      margin-bottom:20px;    
+      }
+
+      #incricoes {
+        font-size: 19px;
+        margin: 20px 0px 0px 40px;    
+      }
+
+      #incricoes img {
+        width: 150px;
+      }
+
+    .botaoInscricao {
+      width: 250px;
+      height: 55px;
+      font-size: 20px;
+      margin-top: 105px;
+      margin-right: 15px;
+    }
+
+  }
+
+  @media only screen and (max-width:930px) {
+
+    #conteudoPrincipal h1 {
+      font-size: 25px;
+    }
+
+    #conteudoPrincipal #data {
+      font-size: 15px;
+    }
+
+    #conteudoPrincipal #descricao {
+      font-size: 15px;
+      margin: 30px 60px 40px 60px;
+    }
+
+    .timer h2{
+      font-size: 33px;
+    }
+
+    #textoTimer {  
+      font-size: 17px;
+      line-height: 36px;
+      margin-bottom:20px;    
+      }
+
+      #incricoes {
+        font-size: 17px;
+        margin: 20px 0px 0px 40px;    
+      }
+
+      #incricoes img {
+        width: 130px;
+      }
+
+    .botaoInscricao {
+      width: 200px;
+      height: 50px;
+      font-size: 15px;
+      margin-top: 105px;
+      margin-right: 15px;
+    }
+
+  } */
